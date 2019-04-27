@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<form>
+
+    <input style="width: 410px;height: 50px"  id="hienthi"/>
+
+    <br/>
+    <br/>
+    <input type="button" value="1"  style="width: 100px ;height: 50px" onclick="ham(this.value)"/>
+    <input type="button" value="2" style="width: 100px;height: 50px"   onclick="ham(this.value)"/>
+    <input type="button" value="3" style="width: 100px;height: 50px"    onclick="ham(this.value)"/>
+    <input type="button" value="+" style="width: 100px;height: 50px"  onclick="ham(this.value)"/>
+    <br/>
+    <br/>
+    <input type="button" value="4" style="width: 100px;height: 50px" onclick="ham(this.value)"/>
+    <input type="button" value="5" style="width: 100px;height: 50px" onclick="ham(this.value)"/>
+    <input type="button" value="6" style="width: 100px;height: 50px" onclick="ham(this.value)"/>
+    <input type="button" value="-" style="width: 100px;height: 50px" onclick="ham(this.value)"/>
+    <br/>
+    <br/>
+    <input type="button" value="7" style="width: 100px;height: 50px"  onclick="ham(this.value)"/>
+    <input type="button" value="8" style="width: 100px;height: 50px"  onclick="ham(this.value)"/>
+    <input type="button" value="9" style="width: 100px;height: 50px" onclick="ham(this.value)"/>
+    <input type="button" value="*" style="width: 100px;height: 50px" onclick="ham(this.value)"/>
+    <br/>
+    <br/>
+    <input type="button" value="C" style="width: 100px;height: 50px"  onclick="ham(this.value)"/>
+    <input type="button" value="0" style="width: 100px;height: 50px"  onclick="ham(this.value)"/>
+    <input type="button" value="=" style="width: 100px;height: 50px"   onclick="ham(this.value)"/>
+    <input type="button" value="/" style="width: 100px;height: 50px"   onclick="ham(this.value)"/>
+
+
+</form>
+<script>
+    function ham(number) {
+        switch (number) {
+            case "1":
+                document.getElementById("hienthi").value += "1";
+                break;
+
+            case "2":
+                document.getElementById("hienthi").value += "2";
+                break;
+            case "3":
+                document.getElementById("hienthi").value += "3";
+                break;
+            case "4":
+                document.getElementById("hienthi").value += "4";
+                break;
+            case "5":
+                document.getElementById("hienthi").value += "5";
+                break;
+            case "6":
+                document.getElementById("hienthi").value += "6";
+                break;
+            case "7":
+                document.getElementById("hienthi").value += "7";
+                break;
+            case "8":
+                document.getElementById("hienthi").value += "8";
+                break;
+            case "9":
+                document.getElementById("hienthi").value += "9";
+                break;
+            case "0":
+                document.getElementById("hienthi").value += "0";
+                break;
+            case "+":
+                document.getElementById("hienthi").value += "+";
+                break;
+            case "-":
+                document.getElementById("hienthi").value += "-";
+                break;
+            case "*":
+                document.getElementById("hienthi").value += "*";
+                break;
+            case "/":
+                document.getElementById("hienthi").value += "/";
+                break;
+            case "=":
+                document.getElementById("hienthi").value = eval(document.getElementById("hienthi").value);
+                break;
+            case "C":
+                document.getElementById("hienthi").value = "";
+                break;
+        }
+    }
+</script>
+</body>
+</html>
